@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GamePage"
+    android:background="@drawable/wooden_bg">
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/Dark_Brown"
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:textSize="48sp"
+            android:contentDescription="@string/button_1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginStart="12dp"
+            android:textSize="48sp"
+            android:contentDescription="@string/button_2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginStart="12dp"
+            android:textSize="48sp"
+            android:contentDescription="@string/button_3" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:textSize="48sp"
+            android:contentDescription="@string/button_4" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginStart="12dp"
+            android:contentDescription="@string/button_5"
+            android:textSize="48sp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginStart="12dp"
+            android:contentDescription="@string/button_6"
+            android:textSize="48sp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:textSize="48sp"
+            android:contentDescription="@string/button_7"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginStart="12dp"
+            android:textSize="48sp"
+            android:contentDescription="@string/button_8"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginStart="12dp"
+            android:textSize="48sp"
+            android:contentDescription="@string/button_9"/>
+    </GridLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:contentDescription="@string/reset"
+        android:background="@color/Ultra_dark_brown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="@+id/gridLayout"
+        app:layout_constraintStart_toStartOf="@+id/gridLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3">
+
+        <TextView
+            android:id="@+id/playerView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:maxEms="5"
+            android:maxLines="1"
+            android:text="@string/player_1"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/pointing_arrow"
+            app:srcCompat="@drawable/baseline_arrow_forward_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/x"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayoutCompat"
+        app:layout_constraintStart_toStartOf="@+id/linearLayoutCompat"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat">
+
+        <TextView
+            android:id="@+id/playerView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:maxEms="5"
+            android:maxLines="1"
+            android:text="@string/player_2"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/pointing_arrow"
+            app:srcCompat="@drawable/baseline_arrow_forward_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/o"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
