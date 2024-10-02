@@ -8,6 +8,7 @@ This is an offline android game project developed using Andoid Studio, Java.
   <li>Supports AI mode</li>
   <li>Supports Multiplayer (Offline) mode</li>
 </ul>
+<h2>Logo</h2>
 <h2>Auther</h2>
 Ashutosh Dwibedi
 <br>
